@@ -1,0 +1,29 @@
+.settings__setting {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.9;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.settings__setting i {
+  margin-right: 20px;
+  font-size: 22px;
+}
+.settings-list {
+  border-bottom: var(--main-border);
+  padding-bottom: 30px;
+}
+
+.settings__setting-column {
+  display: flex;
+  align-items: center;
+}
+
+/*.settings__setting-column :last-child 처럼 클래스명과 :last-child사이에 띄어쓰기 있으면 안됨*/
+.settings__setting-column:last-child {
+  opacity: 0.6;
+}
