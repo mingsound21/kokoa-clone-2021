@@ -1,0 +1,126 @@
+#chat-screen {
+  background-color: #abc1d1;
+  height: 1000vh;
+  position: relative;
+}
+
+#chat-screen .alt-header,
+#chat-screen .status-bar {
+  top: 0;
+  background-color: #abc1d1;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#chat-screen .status-bar {
+  z-index: 2;
+}
+
+#chat-screen .alt-header {
+  z-index: 1;
+}
+
+.main-chat {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  background-color: #92a4b2;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.message-row img {
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.message__author {
+  margin-bottom: 5px;
+  display: block;
+  font-size: 9px;
+  font-size: 14px;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 8px 8px;
+  border-radius: 13px;
+  border-top-left-radius: 0px;
+  font-size: 16px;
+  margin-right: 5px;
+  font-weight: 600;
+}
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.message__time {
+  font-size: 9px;
+  font-size: 9px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-left-radius: 13px;
+  border-top-right-radius: 0px;
+
+  margin-left: 5px;
+  margin-right: 0px;
+  font-weight: 600;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply input {
+  height: 30px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.reply__column:last-child i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 0;
+}

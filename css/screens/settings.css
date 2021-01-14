@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: space-between;
   opacity: 0.9;
+}
+.settings__setting:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
